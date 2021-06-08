@@ -3,6 +3,20 @@ body {
 }
 
 h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+.description {
+  color: white;
+  font-size: small;
+  font-family: Georgia, serif;
+  /* font-family: Georgia, Verdana, sans-serif; */
+}
+
+.footer {
+  color: gray;
+  font-size: medium;
+  font-family: Verdana, sans-serif;
 }
