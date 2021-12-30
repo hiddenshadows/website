@@ -1,4 +1,5 @@
 const root = document.documentElement;
+// hello?
 // # for id and . for class
 //document.querySelector gets the data from the html file with the tag(id or class)
 const fretboard = document.querySelector('.fretboard');
