@@ -5,82 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
 
     <title>App</title>
 
-    
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="./Template_files/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="./Template_files/cover.css" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
     
-
-
-
-    <!-- pt2 -->
     
   </head>
-    <!-- Scripts -->
-    <script type="text/javascript" src="myScript.js" ></script>
 
-  <body class="text-center" data-new-gr-c-s-check-loaded="14.1043.0" data-gr-ext-installed="">
+  <body>
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="outer">
-          <h3 class="masthead-brand">Guitar Fretboard</h3>
-          <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link" href="https://hiddenshadows.github.io/website/">Home</a>
-              <a class="nav-link active" href="#">App</a>
-              <li class="nav-link dropdown">
-                <a class="nav-link dropdown-toggle">Scale</a>
-                <div class="dropdown-content" aria-labelledby="dropdown01">
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Major Pentatonic</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Minor Pentatonic</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Aeolian (Minor)</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Harmonic Minor</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Blues Minor Scale</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Dorian</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">Jazz Minor Major</a>
-                </div>
-              </li>
-              <li class="nav-link dropdown">
-                <a class="nav-link dropdown-toggle">Key</a>
-                <div class="dropdown-content" aria-labelledby="dropdown01">
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">A</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">A♯/B♭</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">B</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">C</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">C♯/D♭</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">D</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">D♯/E♭</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">E</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">F</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">F♯/G♭</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">G</a>
-                  <a class="nav-item dropdown-link" href="javascript:void(0)">G♯/A♭</a>
-                </div>
-              </li>
-          </nav>
-        </div>
-      </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Learn the fretboard</h1>
-        <p class="lead">This tool is designed to help you learn scales and hopefully help you master the fretboard of your guitar.</p>
-        <p class="lead">
-          <a href="https://hiddenshadows.github.io/website/app.html" class="btn btn-lg btn-secondary">Get started</a>
-        </p>
-      </main>
+      <!-- ... existing HTML ... -->
 
-      <canvas class="myCanvas">
-        <p>Add suitable fallback here.</p>
-      </canvas>
+      <div id="like_button_container"></div>
+
+      <!-- ... existing HTML ... -->
+    <div class="settings">
+      <label for="instrument-selector">Selected instrument: </label>
+      <select name="instrument-selector" id="instrument-selector"></select>
+
+      <div class="accidental-selector">
+        <input type="radio" class="acc-select" id="flats" name="accidentals", value="flats" checked>
+        <label for="flats">Flat (♭)</label>
+        <input type="radio" class="acc-select" id="sharps" name="accidentals", value="sharps">
+        <label for="flats">Sharp (♯) </label>
+      </div>
+      <label for="number-of-frets">Number of Frets:</label>
+      <input type="number" id="number-of-frets" min="7" max="24" value="21">
+      
+      <label for="show-all-notes">Show All notes:</label>
+      <input type="checkbox" id="show-all-notes">
+
+      <label for="show-multiple-notes">Show multiple notes:</label>
+      <input type="checkbox" id="show-multiple-notes">
+
+    </div>
+    <div class="fretboard">
+
+      
+    </div>
+    <div class="note-name-section">
+      
+    </div>
+      <!-- Scripts -->
+      <script src="myScript.js" ></script>
 
       <!-- <script>
 
@@ -94,29 +63,29 @@
 
       </script> -->
 
-      <footer class="mastfoot mt-auto">
+      <!-- <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
       </footer>
-    </div>
+    </div> -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Template_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="./Template_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./Template_files/popper.min.js.download"></script>
-    <script src="./Template_files/bootstrap.min.js.download"></script>
+    <script src="./Template_files/bootstrap.min.js.download"></script> -->
 
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Starter Template_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./Starter Template_files/popper.min.js.download"></script>
-    <script src="./Starter Template_files/bootstrap.min.js.download"></script>
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
   
 
 <div id="volume-booster-visusalizer">
