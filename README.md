@@ -1,2 +1,2 @@
 # website
-https://hiddenshadows.github.io/my-app/
+https://hiddenshadows.github.io/website
